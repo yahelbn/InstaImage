@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ShowAndSearchPictures"
+    android:orientation="vertical"
+    android:weightSum="3"
+
+    >
+
+
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.4"
+            android:queryHint="Search here"
+            android:iconifiedByDefault="false"
+            />
+
+    <ListView
+        android:id="@+id/lvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:background="@drawable/mello"
+        ></ListView>
+
+    <Button
+        android:text="Add Picture"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.4"
+        android:id="@+id/addPictureButton"
+        android:textColor="#072540"
+
+        android:background="@drawable/button_create"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        ></Button>
+
+
+
+
+</LinearLayout>

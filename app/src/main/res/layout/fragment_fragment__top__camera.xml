@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment_Top_Camera"
+    android:background="@drawable/mello">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/squareCamera"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.3">
+
+    </ImageView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="2.7"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <Button
+        android:id="@+id/capturePictureButton"
+        android:text="Take Picture"
+        android:textAllCaps="false"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#072540"
+
+        android:background="@drawable/button_create"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"></Button>
+    <Button
+        android:id="@+id/GalleryPicturesButton"
+        android:text="From Gallery"
+        android:textAllCaps="false"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#072540"
+
+        android:background="@drawable/button_create"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"></Button>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</FrameLayout>
